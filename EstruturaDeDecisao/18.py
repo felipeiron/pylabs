@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-import datetime
 import os
-from posixpath import split
 os.system('clear')
 
 print('##### DATE VALIDATION #####\n')
