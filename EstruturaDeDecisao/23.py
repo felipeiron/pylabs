@@ -10,4 +10,3 @@ if num == round(num):
     print('\nO número {} é inteiro.\n'.format(num))
 else:
     print('\nO número {} é decimal.\n'.format(num))
-
