@@ -16,8 +16,14 @@ type = input('\nTipo da carne: ')
 qtd = float(input('Quantidade em Kg: '))
 card = input('Pagamento no cartão Tabajara(sim ou não): ')
 
-if card.capitalize == 'SIM':
+if card.upper() == 'SIM':
     if qtd <= 5.0:
-        if type.capitalize == 'FILE DUPLO':
-            print('\nTipo da carne: {}\nQuantidade: {}\nPagamento: Cartão Tabajara\n\Total: {}\nDesconto: {}\nValor a pagar: {}
-            ')
+        if type.upper() == 'FILE DUPLO':
+            print(f'\nTipo da carne: {"File Duplo"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 4.9:.2f}\
+                \nDesconto: {(qtd * 4.9)*0.05:.2f}\nValor a pagar: {(qtd * 4.9)*0.95:.2f}')
+        elif type.upper() == 'ALCATRA':
+            print(f'\nTipo da carne: {"Alcatra"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 4.9:.2f}\
+                \nDesconto: {(qtd * 4.9)*0.05:.2f}\nValor a pagar: {(qtd * 4.9)*0.95:.2f}')
+    elif qtd > 5.0:
+
+            
