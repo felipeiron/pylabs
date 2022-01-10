@@ -14,7 +14,7 @@ print(tabulate(tab, headers=['   ', 'Até 5Kg', 'Acima de 5Kg']))
 
 type = input('\nTipo da carne: ')
 qtd = float(input('Quantidade em Kg: '))
-card = input('Pagamento no cartão Tabajara(sim ou não): ')
+card = input('Pagamento no cartão Tabajara(sim ou nao): ')
 
 if card.upper() == 'SIM':
     if qtd <= 5.0:
@@ -22,8 +22,18 @@ if card.upper() == 'SIM':
             print(f'\nTipo da carne: {"File Duplo"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 4.9:.2f}\
                 \nDesconto: {(qtd * 4.9)*0.05:.2f}\nValor a pagar: {(qtd * 4.9)*0.95:.2f}')
         elif type.upper() == 'ALCATRA':
-            print(f'\nTipo da carne: {"Alcatra"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 4.9:.2f}\
-                \nDesconto: {(qtd * 4.9)*0.05:.2f}\nValor a pagar: {(qtd * 4.9)*0.95:.2f}')
+            print(f'\nTipo da carne: {"Alcatra"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 5.9:.2f}\
+                \nDesconto: {(qtd * 5.9)*0.05:.2f}\nValor a pagar: {(qtd * 5.9)*0.95:.2f}')
+        elif type.upper() == 'PICANHA':
+            print(f'\nTipo da carne: {"Picanha"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 6.9:.2f}\
+                \nDesconto: {(qtd * 6.9)*0.05:.2f}\nValor a pagar: {(qtd * 6.9)*0.95:.2f}')
     elif qtd > 5.0:
-
-            
+        if type.upper() == 'FILE DUPLO':
+            print(f'\nTipo da carne: {"File Duplo"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 5.8:.2f}\
+                \nDesconto: {(qtd * 5.8)*0.05:.2f}\nValor a pagar: {(qtd * 5.8)*0.95:.2f}')
+        elif type.upper() == 'ALCATRA':
+            print(f'\nTipo da carne: {"Alcatra"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 6.8:.2f}\
+                \nDesconto: {(qtd * 6.8)*0.05:.2f}\nValor a pagar: {(qtd * 6.8)*0.95:.2f}')
+        elif type.upper() == 'PICANHA':
+            print(f'\nTipo da carne: {"Picanha"}\nQuantidade: {qtd}\nPagamento: Cartão Tabajara\nTotal: {qtd * 7.8:.2f}\
+                \nDesconto: {(qtd * 7.8)*0.05:.2f}\nValor a pagar: {(qtd * 7.8)*0.95:.2f}')            
