@@ -12,8 +12,8 @@ while True:
                 if g_rateB > 0:
                     count = 0
                     while pop_a <= pop_b:
-                        pop_a = pop_a + pop_a * g_rateA / 100
-                        pop_b = pop_b + pop_b * g_rateB / 100
+                        pop_a = (pop_a + pop_a) * (g_rateA / 100)
+                        pop_b = (pop_b + pop_b) * (g_rateB / 100)
                         count += 1
                     else:
                         print('\n"A" population will surpass "B" in',count,'years.')
